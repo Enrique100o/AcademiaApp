@@ -1,4 +1,8 @@
 package com.example.academiaapp.model
 
-class CrearProductoRequest {
-}
+data class CrearProductoRequest(
+    val title: String,
+    val price: Double,
+    val category: String,
+    val thumbnail: String = ""
+)
